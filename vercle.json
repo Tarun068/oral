@@ -1,0 +1,17 @@
+
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/index_new.php",
+      "destination": "/",
+      "permanent": false
+    }
+  ]
+}
