@@ -1717,7 +1717,7 @@ select.input{appearance:none;-webkit-appearance:none;background-image:url("data:
 <button type="button" class="guide-btn" data-act="guide" aria-expanded="false" aria-controls="guide"><svg class="i" aria-hidden="true"><use href="#i-grid"/></svg><span>Mockup guide</span></button>
 <div class="guide" id="guide" role="dialog" aria-label="Mockup guide">
   <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px">
-    <div class="stack-sm"><h2>Marcel redesign · clickable mockup</h2><p class="small muted">Every button works. Prices are hidden, and stories, clinics and time slots are sample data.</p></div>
+    <div class="stack-sm"><h2>Marcel OMR Therapy</h2><p class="small muted">Every button works. Prices are hidden, and stories, clinics and time slots are sample data.</p></div>
     <button type="button" class="icon-btn" data-act="guide" aria-label="Close guide"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg></button>
   </div>
   <div class="guide-sec">
@@ -2655,7 +2655,7 @@ function route() {
   $$('.page').forEach(p => p.classList.toggle('active', p.dataset.page === page));
   const navKey = page === 'product' ? 'shop' : page === 'result' ? 'test' : page === 'article' ? 'osmf' : page;
   $$('[data-nav]').forEach(a => a.classList.toggle('active', a.dataset.nav === navKey));
-  document.title = page === 'home' ? 'Marcel OMR Therapy · Redesign mockup' : `${page === 'product' && PRODUCTS[param] ? PRODUCTS[param].cardName : TITLES[page]} · Marcel OMR Therapy`;
+  document.title = page === 'home' ? 'Marcel OMR Therapy' : `${page === 'product' && PRODUCTS[param] ? PRODUCTS[param].cardName : TITLES[page]} · Marcel OMR Therapy`;
   window.scrollTo(0, 0);
 }
 function go(hash) { if (location.hash === '#' + hash) route(); else location.hash = hash; }
